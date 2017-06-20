@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FactBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ee9-uo-tp8"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96w-Nq-2Fj">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="96w-Nq-2Fj" secondAttribute="height" multiplier="290:209" id="eoT-6i-ra2"/>
+                                </constraints>
+                                <state key="normal" image="Brain"/>
+                                <connections>
+                                    <action selector="RandomFact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ey-x0-5B5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fact Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZT-mG-GN2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="eo0-Xg-wwa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Heavy" family="Avenir Next Condensed" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-Br-t9r">
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Etb-Br-t9r" secondAttribute="height" multiplier="343:286" id="v08-ff-Fnl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="96w-Nq-2Fj" firstAttribute="top" secondItem="Etb-Br-t9r" secondAttribute="bottom" constant="8" id="1oc-Yg-aQ3"/>
+                            <constraint firstAttribute="trailing" secondItem="Ee9-uo-tp8" secondAttribute="trailing" id="5qk-vz-m76"/>
+                            <constraint firstItem="Ee9-uo-tp8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AAp-oa-Yb4"/>
+                            <constraint firstItem="Etb-Br-t9r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DRb-GC-xMU"/>
+                            <constraint firstItem="GZT-mG-GN2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HDC-Ri-kZB"/>
+                            <constraint firstItem="GZT-mG-GN2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TFc-z0-Ahu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="96w-Nq-2Fj" secondAttribute="trailing" constant="27" id="TGs-mq-04s"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="96w-Nq-2Fj" secondAttribute="bottom" constant="20" id="WgO-ZU-4lk"/>
+                            <constraint firstItem="Etb-Br-t9r" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZQZ-qG-Jkz"/>
+                            <constraint firstItem="Etb-Br-t9r" firstAttribute="top" secondItem="GZT-mG-GN2" secondAttribute="bottom" constant="8" id="bfs-PE-KfM"/>
+                            <constraint firstItem="96w-Nq-2Fj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="cuJ-IS-YUT"/>
+                            <constraint firstItem="Etb-Br-t9r" firstAttribute="top" secondItem="GZT-mG-GN2" secondAttribute="bottom" constant="8" id="lEc-WL-mQx"/>
+                            <constraint firstItem="Ee9-uo-tp8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pr3-Dy-3q8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ee9-uo-tp8" secondAttribute="bottom" id="r73-NQ-Qqg"/>
+                            <constraint firstItem="96w-Nq-2Fj" firstAttribute="top" secondItem="Etb-Br-t9r" secondAttribute="bottom" constant="8" id="sxM-3y-ZLw"/>
+                            <constraint firstItem="GZT-mG-GN2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uMn-oi-wZr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Etb-Br-t9r" id="9ku-Ci-Tzm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Brain" width="460" height="340"/>
+        <image name="background" width="1920" height="1080"/>
+    </resources>
+</document>
